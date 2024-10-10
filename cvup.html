@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV_UP - Empowering Algerian Job Seekers</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS */
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('hero-bg.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-top: 20px;
+            animation: fadeInUp 1s ease-out 0.5s;
+            opacity: 0;
+            animation-fill-mode: forwards;
+        }
+
+        .hero .btn {
+            margin-top: 30px;
+            padding: 12px 24px;
+            font-size: 1rem;
+            border-radius: 50px;
+            animation: fadeInUp 1s ease-out 1s;
+            opacity: 0;
+            animation-fill-mode: forwards;
+        }
+
+        .sticky-header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 4px rgba(0,0,0,.1);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .service-box {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonial-carousel .carousel-item {
+            padding: 20px;
+        }
+
+        .blog-post {
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+
+        .blog-post:hover {
+            transform: translateY(-5px);
+        }
+
+        .chat-bot-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        .back-to-top-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 24px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-to-top-btn:hover {
+            background-color: #0056b3;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Add more custom styles as needed */
+    </style>
+</head>
+<body>
+    <header id="main-header" class="sticky-header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">CV_UP</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#job-search">Job Search</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#success-stories">Success Stories</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="app">
+        <section class="hero">
+            <div class="container">
+                <h1>Empowering Job Seekers in Algeria</h1>
+                <p>Your career starts here! CV_UP helps you create the perfect CV, prepare for interviews, and find jobs in Algeria and abroad.</p>
+                <a href="#services" class="btn btn-primary btn-lg me-3">Start Your Journey</a>
+                <a href="#contact" class="btn btn-outline-light btn-lg">Contact Us</a>
+            </div>
+        </section>
+
+        <section id="services" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Our Services</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="service-box text-center p-4 bg-light rounded">
+                            <i class="fas fa-file-alt fa-3x mb-3 text-primary"></i>
+                            <h4>CV Optimization</h4>
+                            <p>Make sure your CV passes ATS and stands out to recruiters with our expert CV review services.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="service-box text-center p-4 bg-light rounded">
+                            <i class="fas fa-user-tie fa-3x mb-3 text-primary"></i>
+                            <h4>Interview Preparation</h4>
+                            <p>Be fully prepared and confident for your job interviews with personalized coaching sessions.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="service-box text-center p-4 bg-light rounded">
+                            <i class="fas fa-globe fa-3x mb-3 text-primary"></i>
+                            <h4>Global Job Opportunities</h4>
+                            <p>Explore job opportunities in Algeria, Germany, Qatar, and other global markets.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="job-search" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Find Your Dream Job</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <form @submit.prevent="searchJobs" class="mb-4">
+                            <div class="input-group">
+                                <input type="text" class="form-control" v-model="jobSearchQuery" placeholder="Enter job title, skills, or company">
+                                <button class="btn btn-primary" type="submit">Search</button>
+                            </div>
+                        </form>
+                        <div v-if="jobListings.length > 0">
+                            <div v-for="job in jobListings" :key="job.id" class="card mb-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{ job.title }}</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">{{ job.company }}</h6>
+                                    <p class="card-text">{{ job.description }}</p>
+                                    <a href="#" class="btn btn-outline-primary">Apply Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <p v-else class="text-center">No job listings found. Try a different search term.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="success-stories" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Success Stories</h2>
+                <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="testimonial-carousel text-center">
+                                <img src="user1.jpg" alt="Testimonial 1" class="rounded-circle mb-3" width="100">
+                                <p class="lead">"Thanks to CV_UP, I got hired in Germany! Their CV tips were essential."</p>
+                                <h5>Amine, Software Engineer</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="testimonial-carousel text-center">
+                                <img src="user2.jpg" alt="Testimonial 2" class="rounded-circle mb-3" width="100">
+                                <p class="lead">"I never knew the importance of ATS until CV_UP optimized my CV. I got interviews within days!"</p>
+                                <h5>Sara, Marketing Specialist</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="testimonial-carousel text-center">
+                                <img src="user3.jpg" alt="Testimonial 3" class="rounded-circle mb-3" width="100">
+                                <p class="lead">"Their interview coaching helped me nail my dream job in Qatar."</p>
+                                <h5>Youssef, Data Analyst</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Latest Career Advice</h2>
+                <div class="row">
+                    <div v-for="post in blogPosts" :key="post.id" class="col-md-4 mb-4">
+                        <div class="card blog-post h-100">
+                            <img :src="post.image" class="card-img-top" :alt="post.title">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ post.title }}</h5>
+                                <p class="card-text">{{ post.excerpt }}</p>
+                                <a href="#" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Contact Us</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <form @submit.prevent="submitContactForm">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Your Name</label>
+                                <input type="text" class="form-control" id="name" v-model="contactForm.name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Your Email</label>
+                                <input type="email" class="form-control" id="email" v-model="contactForm.email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="5" v-model="contactForm.message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>About CV_UP</h5>
+                    <p>Empowering job seekers in Algeria and beyond with expert career guidance and support.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#services" class="text-white">Services</a></li>
+                        <li><a href="#job-search" class="text-white">Job Search</a></li>
+                        <li><a href="#success-stories" class="text-white">Success Stories</a></li>
+                        <li><a href="#blog" class="text-white">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Connect With Us</h5>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center mb-0">&copy; 2024 CV_UP | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <div id="chat-bot" class="chat-bot-container">
+        <button @click="toggleChatbot" class="btn btn-primary rounded-circle p-3">
+            <i class="fas" :class="{'fa-comments': !isChatbotOpen, 'fa-times': isChatbotOpen}"></i>
+        </button>
+        <div v-if="isChatbotOpen" class="card" style="width: 300px;">
+            <div class="card-header">Chat with us</div>
+            <div class="card-body" style="height: 300px; overflow-y: auto;">
+                <div v-for="message in chatMessages" :key="message.id" :class="{'text-end': message.sender === 'user'}">
+                    <small>{{ message.sender }}</small>
+                    <p>{{ message.text }}</p>
+                </div>
+            </div>
+            <div class="card-footer">
+                <form @submit.prevent="sendChatMessage">
+                    <div class="input-group">
+                        <input type="text" class="form-control" v-model="chatInput" placeholder="Type your message...">
+                        <button class="btn btn-primary" type="submit">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <button id="back-to-top" class="back-to-top-btn" aria-label="Back to top" onclick="scrollToTop()">↑</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                jobSearchQuery: '',
+                jobListings: [],
+                blogPosts: [
+                    { id: 1, title: "10 Tips for a Winning CV", excerpt: "Learn how to make your CV stand out...", image: "blog1.jpg" },
+                    { id: 2, title: "Mastering the Job Interview", excerpt: "Prepare for success with these interview tips...", image: "blog2.jpg" },
+                    { id: 3, title: "Navigating the Global Job Market", excerpt: "Explore opportunities beyond borders...", image: "blog3.jpg" }
+                ],
+                contactForm: {
+                    name: '',
+                    email: '',
+                    message: ''
+                },
+                isChatbotOpen: false,
+                chatMessages: [],
+                chatInput: ''
+            },
+            methods: {
+                searchJobs() {
+                    // Simulated job search - replace with actual API call
+                    this.jobListings = [
+                        { id: 1, title: "Software Developer", company: "Tech Co", description: "Exciting opportunity for a skilled developer..." },
+                        { id: 2, title: "Marketing Manager", company: "Brand Inc", description: "Lead our marketing efforts and drive growth..." },
+                        { id: 3, title: "Data Analyst", company: "Data Corp", description: "Turn data into actionable insights..." }
+                    ];
+                },
+                submitContactForm() {
+                    // Simulated form submission - replace with actual API call
+                    alert('Thank you for your message. We will get back to you soon!');
+                    this.contactForm = { name: '', email: '', message: '' };
+                },
+                toggleChatbot() {
+                    this.isChatbotOpen = !this.isChatbotOpen;
+                },
+                sendChatMessage() {
+                    if (this.chatInput.trim() !== '') {
+                        this.chatMessages.push({ id: Date.now(), sender: 'user', text: this.chatInput });
+                        this.chatInput = '';
+                        // Simulated chatbot response - replace with actual chatbot logic
+                        setTimeout(() => {
+                            this.chatMessages.push({ id: Date.now(), sender: 'bot', text: 'Thank you for your message. How can I assist you today?' });
+                        }, 1000);
+                    }
+                }
+            }
+        });
+
+        // Back to top button functionality
+        window.onscroll = function() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("back-to-top").style.display = "block";
+            } else {
+                document.getElementById("back-to-top").style.display = "none";
+            }
+        };
+
+        function scrollToTop() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
